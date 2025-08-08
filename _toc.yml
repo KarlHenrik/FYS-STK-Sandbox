@@ -1,0 +1,16 @@
+format: jb-book
+root: E1
+chapters:
+- file: E2
+- file: E3
+- file: E4
+- file: E5
+- file: E6
+- file: P1
+- file: Old/W34
+- file: Old/W35
+- file: Old/W36
+- file: Old/W37
+- file: Old/W38
+- file: Old/W39
+- file: Old/P1

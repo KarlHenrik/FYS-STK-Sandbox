@@ -376,22 +376,26 @@ document.write(`
 <section id="how-to-take-derivatives-of-matrix-vector-expressions">
 <h2>How to take derivatives of Matrix-Vector expressions<a class="headerlink" href="#how-to-take-derivatives-of-matrix-vector-expressions" title="Link to this heading">#</a></h2>
 <p>In these exercises it is always useful to write out with summation indices the various quantities. Take also a look at the weekly slides from week 35 and the various examples included there.</p>
-<p>As an example, consider the function
-$<span class="math notranslate nohighlight">\(
+<p>As an example, consider the function</p>
+<div class="math notranslate nohighlight">
+\[
 f(\boldsymbol{x}) =\boldsymbol{A}\boldsymbol{x},
-\)</span><span class="math notranslate nohighlight">\(
-which reads for a specific component \)</span>f_i<span class="math notranslate nohighlight">\( (we define the matrix \)</span>\boldsymbol{A}<span class="math notranslate nohighlight">\( to have dimension \)</span>n\times n<span class="math notranslate nohighlight">\( and the vector \)</span>\boldsymbol{x}<span class="math notranslate nohighlight">\( to have length \)</span>n<span class="math notranslate nohighlight">\()
-\)</span><span class="math notranslate nohighlight">\(
+\]</div>
+<p>which reads for a specific component <span class="math notranslate nohighlight">\(f_i\)</span> (we define the matrix <span class="math notranslate nohighlight">\(\boldsymbol{A}\)</span> to have dimension <span class="math notranslate nohighlight">\(n\times n\)</span> and the vector <span class="math notranslate nohighlight">\(\boldsymbol{x}\)</span> to have length <span class="math notranslate nohighlight">\(n\)</span>)</p>
+<div class="math notranslate nohighlight">
+\[
 f_i =\sum_{j=0}^{n-1}a_{ij}x_j,
-\)</span><span class="math notranslate nohighlight">\(
-which leads to
-\)</span><span class="math notranslate nohighlight">\(
+\]</div>
+<p>which leads to</p>
+<div class="math notranslate nohighlight">
+\[
 \frac{\partial f_i}{\partial x_j}= a_{ij},
-\)</span><span class="math notranslate nohighlight">\(
-and written out in terms of the vector \)</span>\boldsymbol{x}<span class="math notranslate nohighlight">\( we have
-\)</span><span class="math notranslate nohighlight">\(
+\]</div>
+<p>and written out in terms of the vector <span class="math notranslate nohighlight">\(\boldsymbol{x}\)</span> we have</p>
+<div class="math notranslate nohighlight">
+\[
 \frac{\partial f(\boldsymbol{x})}{\partial \boldsymbol{x}}= \boldsymbol{A}.
-\)</span>$</p>
+\]</div>
 </section>
 <section id="exercise-1-finding-the-derivative-of-matrix-vector-expressions">
 <h2>Exercise 1 - Finding the derivative of Matrix-Vector expressions<a class="headerlink" href="#exercise-1-finding-the-derivative-of-matrix-vector-expressions" title="Link to this heading">#</a></h2>
@@ -431,10 +435,11 @@ and written out in terms of the vector \)</span>\boldsymbol{x}<span class="math 
 \left(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\right)^T\left(\boldsymbol{y}-\boldsymbol{X}\boldsymbol{\beta}\right)
 \]</div>
 <p><strong>b)</strong> If <span class="math notranslate nohighlight">\(\boldsymbol{X}\)</span> is invertible, what is the expression for the optimal parameters <span class="math notranslate nohighlight">\(\boldsymbol{\beta}\)</span>? (<strong>Hint:</strong> Don’t compute any derivatives, but solve <span class="math notranslate nohighlight">\(\boldsymbol{X\beta}=\boldsymbol{y}\)</span> for <span class="math notranslate nohighlight">\(\boldsymbol{\beta}\)</span>)</p>
-<p><strong>c)</strong> Show that
-$<span class="math notranslate nohighlight">\(
+<p><strong>c)</strong> Show that</p>
+<div class="math notranslate nohighlight">
+\[
 \frac{\partial \left(\boldsymbol{x}-\boldsymbol{A}\boldsymbol{s}\right)^T\left(\boldsymbol{x}-\boldsymbol{A}\boldsymbol{s}\right)}{\partial \boldsymbol{s}} = -2\left(\boldsymbol{x}-\boldsymbol{A}\boldsymbol{s}\right)^T\boldsymbol{A},
-\)</span>$</p>
+\]</div>
 <p><strong>d)</strong> Using the expression from <strong>c)</strong>, but substituting back in <span class="math notranslate nohighlight">\(\boldsymbol{\beta}\)</span>, <span class="math notranslate nohighlight">\(\boldsymbol{y}\)</span> and <span class="math notranslate nohighlight">\(\boldsymbol{X}\)</span>, find the expression for the optimal parameters <span class="math notranslate nohighlight">\(\boldsymbol{\beta}\)</span> in the case that <span class="math notranslate nohighlight">\(\boldsymbol{X}\)</span> is not invertible, but <span class="math notranslate nohighlight">\(\boldsymbol{X^T X}\)</span> is, which is most often the case.</p>
 <div class="math notranslate nohighlight">
 \[

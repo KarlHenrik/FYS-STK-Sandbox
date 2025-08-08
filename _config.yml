@@ -2,6 +2,7 @@
 title: FYS-STK Demo
 author: Karl Henrik Fredly and Morten Hjort-Jensen
 logo: 
+html_baseurl: https://karlhenrik.github.io/FYS-STK-Sandbox/
 execute:
   execute_notebooks: off
 
